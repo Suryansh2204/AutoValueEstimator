@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+input::placeholder,
+button,
+textarea,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+#root,
+body,
+html {
+  width: 100vw;
+  display: block;
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+  transition: 0.7s;
+  transition-timing-function: cubic-bezier(0.18, 1, 0.04, 1);
+}
+
+body {
+  background-color: #222222;
+}

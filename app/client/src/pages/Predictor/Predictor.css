@@ -1,0 +1,172 @@
+.Predictor {
+  width: 100%;
+  height: 85vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Predictor-card {
+  width: 55%;
+  min-width: 600px;
+  max-width: 700px;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  padding: 30px 25px 15px 25px;
+  text-align: justify;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.Predictor-card-instructions span {
+  font-weight: bold;
+}
+.Predictor-card-instructions li {
+  margin-bottom: 5px;
+}
+
+.Predictor-card-form {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+#car-price-form {
+  padding: 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.form-group {
+  display: contents;
+}
+
+.Predictor-card-form label {
+  color: #333333;
+  font-weight: 600;
+  grid-column: 1 / 2;
+}
+.Predictor-card-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #2f4f4f;
+  background-color: #fafafa;
+  grid-column: 2 / 3;
+}
+
+.Predictor-card-form input::-webkit-outer-spin-button,
+.Predictor-card-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.Predictor-card-form input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.Predictor-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / 3;
+  margin-top: 15px;
+}
+.Button {
+  position: relative;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5em 2.5em;
+  display: inline-block;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #006d77;
+}
+
+.Button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #005c66;
+}
+
+.Button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Button::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.Button::after {
+  background-color: #006d77;
+}
+
+.Button:hover::after {
+  transform: scaleX(1.4) scaleY(1.5);
+  opacity: 0;
+}
+
+.Predictor-results {
+  width: 100%;
+  height: 280px;
+  position: absolute;
+  background-color: #f0f0f0;
+  bottom: 0;
+  left: 0;
+  border-radius: 12px;
+  z-index: 10;
+}
+.Predictor-center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Predictor-prediction {
+  margin: 20px auto 30px auto;
+  font-weight: lighter;
+}
+
+.Predictor-price {
+  font-size: 25px;
+}
+.Predictor-reset {
+  position: absolute;
+  bottom: 35px;
+}
+
+#reset {
+  width: 180px;
+}
+
+.Predictor-error {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  top: -10px;
+  left: 60px;
+  z-index: 5;
+  margin-left: 30%;
+}
