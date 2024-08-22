@@ -186,7 +186,7 @@ export default function Predictor() {
                 <h2>The predicted price of the vehicle is</h2>
               </div>
               <div className="Predictor-price">
-                <h1>$ {predictedPrice} </h1>
+                <h1>₹ {predictedPrice} </h1>
               </div>
               <div className="Predictor-reset">
                 <button
